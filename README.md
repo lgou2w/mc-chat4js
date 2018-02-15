@@ -1,2 +1,2 @@
-# chat4js
-Javascript Minecraft ChatComponent library.
+# mc-chat4js
+A Minecraft MoonLake Chat Library of Javascript.
