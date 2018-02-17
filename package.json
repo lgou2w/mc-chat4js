@@ -4,7 +4,7 @@
   "private": true,
   "author": "lgou2w",
   "license": "GPL-3.0",
-  "description": "A Minecraft MoonLake Chat Library of Javascript.",
+  "description": "A Minecraft MoonLake Chat Library for Typescript.",
   "main": "mcchat4js.js",
   "scripts": {
     "test": "node ./bin/test"

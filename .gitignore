@@ -1,3 +1,9 @@
+/bin/*.js
+/bin/*.js.map
+/lib/*.js
+/lib/*.js.map
 /node_models/
 /.idea/
 *.iml
+mcchat4js.js
+mcchat4js.js.map
