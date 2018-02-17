@@ -74,15 +74,15 @@ export class ChatSerializer {
             let style = component.getStyle();
             if(style.color !== undefined)
                 array.push(style.color.toString());
-            if(style.bold !== undefined)
+            if(style.bold !== undefined && style.bold)
                 array.push(ChatColor.BOLD.toString());
-            if(style.italic !== undefined)
+            if(style.italic !== undefined && style.italic)
                 array.push(ChatColor.ITALIC.toString());
-            if(style.strikethrough != null)
+            if(style.strikethrough != null && style.strikethrough)
                 array.push(ChatColor.STRIKETHROUGH.toString());
-            if(style.underlined != null)
+            if(style.underlined != null && style.underlined)
                 array.push(ChatColor.UNDERLINE.toString());
-            if(style.obfuscated != null)
+            if(style.obfuscated != null && style.obfuscated)
                 array.push(ChatColor.OBFUSCATED.toString());
         }
         if(component instanceof ChatComponentText)
@@ -128,7 +128,9 @@ let ChatStyleSerializer = class ChatStyleSerializer implements Serializer<ChatSt
             let action = HoverActionFromName(json.hoverEvent.action);
             let value = json.hoverEvent.value;
             if(action && (value && typeof value === 'object'))
-                chatStyle.setHoverEvent(new ChatHoverEvent(action, new ChatComponentSerializer().deserialize(value)))
+                chatStyle.setHoverEvent(new ChatHoverEvent(action, new ChatComponentSerializer().deserialize(value)));
+            else if(action && (value && typeof value === 'string'))
+                chatStyle.setHoverEvent(new ChatHoverEvent(action, new ChatComponentText(value)));
         }
         return chatStyle;
     }
