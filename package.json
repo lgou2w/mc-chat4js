@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lgou2w/mc-ping4js.git"
+    "url": "git+https://github.com/lgou2w/mc-chat4js.git"
   },
   "keywords": [
     "minecraft",
@@ -21,7 +21,7 @@
     "chat"
   ],
   "bugs": {
-    "url": "https://github.com/lgou2w/mc-ping4js/issues"
+    "url": "https://github.com/lgou2w/mc-chat4js/issues"
   },
-  "homepage": "https://github.com/lgou2w/mc-ping4js#readme"
+  "homepage": "https://github.com/lgou2w/mc-chat4js#readme"
 }
