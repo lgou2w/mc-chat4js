@@ -1,0 +1,27 @@
+{
+  "name": "mc-chat4js",
+  "version": "0.0.1",
+  "private": true,
+  "author": "lgou2w",
+  "license": "GPL-3.0",
+  "description": "A Minecraft MoonLake Chat Library of Javascript.",
+  "main": "mcchat4js.js",
+  "scripts": {
+    "test": "node ./bin/test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lgou2w/mc-ping4js.git"
+  },
+  "keywords": [
+    "minecraft",
+    "moonlake",
+    "api",
+    "library",
+    "chat"
+  ],
+  "bugs": {
+    "url": "https://github.com/lgou2w/mc-ping4js/issues"
+  },
+  "homepage": "https://github.com/lgou2w/mc-ping4js#readme"
+}
